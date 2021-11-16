@@ -9,7 +9,7 @@ namespace Spectre.Console.Examples
         {
             // Create a type registrar and register any dependencies.
             // A type registrar is an adapter for a DI framework.
-            var registrations = new ServiceCollection();
+            var registrations = new ServiceCollection();
             registrations.AddSingleton<IGreeter, HelloWorldGreeter>();
             var registrar = new TypeRegistrar(registrations);
 
